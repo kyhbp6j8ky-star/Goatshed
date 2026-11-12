@@ -44,3 +44,53 @@ img {
     min-width: 0;
   }
 }
+/* Mobile-Feinschliff */
+@media (max-width: 850px) {
+  /* Das Menü bleibt rechts, das fixe Logo entfällt */
+  .mini-logo {
+    display: none;
+  }
+
+  .site-header {
+    justify-content: flex-end;
+  }
+
+  /* Querformatbilder proportional und responsiv darstellen */
+  .wide-photo img,
+  .music-visual img,
+  .live-hero img,
+  .live-grid img,
+  .split-feature img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .wide-photo img,
+  .live-hero img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .music-visual img,
+  .live-grid img,
+  .split-feature img {
+    aspect-ratio: 4 / 3;
+  }
+
+  /* Lange E-Mail-Adresse darf im Kontaktbutton umbrechen */
+  .contact-inner .button {
+    display: inline-flex;
+    width: fit-content;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact-inner .button {
+    padding-inline: 1rem;
+    font-size: 0.9rem;
+  }
+}
