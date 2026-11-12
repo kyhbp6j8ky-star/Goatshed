@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Goatshed – Original Rock & Blues Rock. Eigene Songs, live und direkt.">
+  <title>Goatshed | Original Rock & Blues Rock</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt</a>
+  <header class="site-header" id="top">
+    <a class="mini-logo" href="#hero" aria-label="Goatshed Startseite">
+      <img src="assets/images/goatshed-logo.png" alt="Goatshed">
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+      <a href="#band">Band</a><a href="#music">Music</a><a href="#story">Story</a><a href="#toni">Toni</a><a href="#live">Live</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero section-dark">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <img class="hero-logo" src="assets/images/goatshed-logo.png" alt="Goatshed">
+        <p class="eyebrow">Original Rock · Blues Rock</p>
+        <h1>We write it. We play it.<br><em>That's Goatshed.</em></h1>
+        <div class="hero-actions"><a class="button button-solid" href="#music">▶ Listen</a><a class="button" href="#live">Live</a></div>
+      </div>
+      <a class="scroll-cue" href="#band" aria-label="Weiter zur Band"><span></span>Scroll</a>
+    </section>
+
+    <section id="band" class="section band-section">
+      <div class="section-heading reveal"><span class="index">01</span><div><p class="kicker">This is Goatshed</p><h2>Four guys making the music we like.</h2></div></div>
+      <figure class="wide-photo reveal"><img src="assets/images/band-live.jpg" alt="Goatshed nach einem Live-Auftritt auf der Bühne"><figcaption>Rankl · Werner · Dani · Samy</figcaption></figure>
+      <div class="member-grid reveal">
+        <article><span>Vocals</span><h3>Rankl</h3><p>Eine Stimme mit Charakter. Ein neues Kapitel, ohne die Geschichte zu vergessen.</p></article>
+        <article><span>Guitar</span><h3>Werner</h3><p>Gitarren, Riffs und der direkte Weg vom Verstärker in den Song.</p></article>
+        <article><span>Bass</span><h3>Dani</h3><p>Der tiefe Puls zwischen Blues, Rock und dem nächsten Refrain.</p></article>
+        <article><span>Drums</span><h3>Samy</h3><p>Grooves, Dynamik und genug Becken für eine kleine Wetterwarnung.</p></article>
+      </div>
+      <div class="split-feature reveal">
+        <img src="assets/images/samy-live.png" alt="Schlagzeuger bei einem Live-Auftritt unter blauem Bühnenlicht">
+        <div><p class="kicker">Samy · Drums</p><h3>Live, laut und ohne Sicherheitsnetz.</h3><p>Kein gestelltes Portrait: Dieser Frame stammt aus einem Goatshed-Livevideo und zeigt genau, worum es geht.</p></div>
+      </div>
+    </section>
+
+    <section id="music" class="section section-dark music-section">
+      <div class="section-heading reveal"><span class="index">02</span><div><p class="kicker">Our Music</p><h2>Eigene Songs. Keine Trends.</h2></div></div>
+      <div class="music-layout">
+        <div class="track-list reveal">
+          <button class="track active" data-title="Bubble of Dreams" data-file="assets/audio/GOATSHED - Bubble of Dreams.mp3"><span class="play">▶</span><span><strong>Bubble of Dreams</strong><small>Goatshed · Original</small></span><b>01</b></button>
+          <button class="track" data-title="When God Calls Your Name" data-file="assets/audio/When god calls your name - GOATSHED - live.mp3"><span class="play">▶</span><span><strong>When God Calls Your Name</strong><small>Live</small></span><b>02</b></button>
+          <button class="track" data-title="18 Wheels" data-file="assets/audio/18 Wheels - GOATSHED - live.mp3"><span class="play">▶</span><span><strong>18 Wheels</strong><small>Live</small></span><b>03</b></button>
+          <button class="track" data-title="Shattered Dreams" data-file="assets/audio/Shattered Dreams.mp3"><span class="play">▶</span><span><strong>Shattered Dreams</strong><small>Goatshed · Original</small></span><b>04</b></button>
+          <p class="audio-note">Lege die MP3-Dateien mit diesen Namen in <code>assets/audio/</code>. Bis dahin bleiben die Titel als Tracklist sichtbar.</p>
+        </div>
+        <figure class="music-visual reveal"><img src="assets/images/drums-detail.jpg" alt="Schlagzeug mit mehreren Becken aus der Vogelperspektive"><figcaption>Made in the shed.</figcaption></figure>
+      </div>
+      <div class="player" aria-live="polite"><button id="player-toggle" type="button" aria-label="Wiedergabe starten">▶</button><div><small>Now playing</small><strong id="player-title">Bubble of Dreams</strong></div><div class="progress"><span id="progress-bar"></span></div><time id="player-time">0:00</time><audio id="audio"></audio></div>
+    </section>
+
+    <section id="shed" class="shed-panel">
+      <img src="assets/images/the-shed-wide.jpg" alt="Goatshed-Proberaum mit Schlagzeug, Gitarren, Verstärkern und Holzofen">
+      <div class="shed-copy reveal"><p class="kicker">The Shed</p><h2>Hier entstehen die Songs.</h2><p>Drums, Gitarren, Marshall, Kabel, ein Ofen und genügend Platz für eine Idee, die beim nächsten Durchlauf plötzlich zum Song wird.</p></div>
+    </section>
+
+    <section id="story" class="section story-section">
+      <div class="section-heading reveal"><span class="index">03</span><div><p class="kicker">Our Story</p><h2>From a goat shed…</h2></div></div>
+      <div class="story-grid">
+        <div class="story-copy reveal"><p>Goatshed entstand 2022 aus Jams von Gitarre und Schlagzeug in einem ehemaligen Geissenstall. Bass und Gesang kamen dazu. Aus Ideen wurden Songs, aus Songs wurde eine Band.</p><p>Die Musik blieb dabei immer direkt: Rock und Blues Rock, eigene Stücke, keine Verkleidung und kein Versuch, irgendwem hinterherzulaufen.</p><blockquote>“We write it. We play it. That's Goatshed.”</blockquote></div>
+        <img class="reveal" src="assets/images/early-band.jpg" alt="Früheres Schwarz-Weiss-Bandfoto von Goatshed">
+      </div>
+    </section>
+
+    <section id="toni" class="toni-section section-dark">
+      <div class="toni-photo" style="background-image:url('assets/images/early-band.jpg')" role="img" aria-label="Historisches Bandfoto von Goatshed"></div>
+      <div class="toni-copy reveal"><p class="kicker">Part of our story</p><h2>Toni</h2><p>Toni war von Anfang an ein prägender Teil von Goatshed. Als Sänger und Songwriter brachte er eine unverwechselbare Stimme und einen Teil seiner australischen Seele in die Musik. Viele Songs tragen seine Handschrift.</p><p>Vor allem aber war Toni ein toller Mensch und Freund.</p><strong>Er fehlt. Seine Stimme, seine Songs und die gemeinsame Zeit bleiben ein Teil von Goatshed.</strong></div>
+    </section>
+
+    <section id="rankl" class="section chapter-section">
+      <div class="chapter-photo reveal"><img src="assets/images/rankl-live.png" alt="Sänger bei einem Goatshed-Live-Auftritt"></div>
+      <div class="chapter-copy reveal"><p class="kicker">A new chapter</p><h2>The story continues.</h2><p>Nach einer Zeit ohne Sänger fand Goatshed mit Rankl eine neue Stimme. Kein Ersatz für die Vergangenheit, sondern ein neues Kapitel mit Respekt vor dem, was davor war.</p><p class="big-line">New voice. Same shed. More songs.</p></div>
+    </section>
+
+    <section id="live" class="section section-dark live-section">
+      <div class="section-heading reveal"><span class="index">04</span><div><p class="kicker">Live</p><h2>Turn it up.</h2></div></div>
+      <figure class="live-hero reveal"><img src="assets/images/live-red.jpg" alt="Goatshed bei einem Live-Auftritt unter rotem Bühnenlicht"><figcaption><span>Goatshed live</span><strong>Rock. Blues. Original songs.</strong></figcaption></figure>
+      <div class="live-grid reveal"><img src="assets/images/live-blue.jpg" alt="Goatshed live unter blauem Licht"><img src="assets/images/live-magenta.jpg" alt="Goatshed live unter magentafarbenem Licht"><img src="assets/images/open-air-poster.jpg" alt="Konzertplakat Open Air Oberheim 2025"></div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="section-heading reveal"><span class="index">05</span><div><p class="kicker">Gallery</p><h2>Inside Goatshed.</h2></div></div>
+      <div class="gallery reveal">
+        <button class="gallery-item tall"><img src="assets/images/drum-room.jpg" alt="Schlagzeug im Proberaum"></button>
+        <button class="gallery-item wide"><img src="assets/images/live-crowd.jpg" alt="Blick aus dem Publikum auf einen Goatshed-Auftritt"></button>
+        <button class="gallery-item"><img src="assets/images/stove.jpg" alt="Holzofen im Goatshed-Proberaum"></button>
+        <button class="gallery-item"><img src="assets/images/outdoor-stage.jpg" alt="Outdoor-Bühne im Aufbau"></button>
+        <button class="gallery-item wide"><img src="assets/images/the-shed-wide.jpg" alt="Breiter Blick in den Goatshed-Proberaum"></button>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section section-dark">
+      <div class="contact-inner reveal"><img src="assets/images/goatshed-logo.png" alt="Goatshed"><p class="kicker">Booking · Gigs · Festivals · Clubs</p><h2>Let's make some noise.</h2><a class="button button-solid" href="mailto:booking@goatshed.ch">booking@goatshed.ch</a><p class="contact-note">E-Mail-Adresse vor Veröffentlichung anpassen.</p></div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Goatshed</span><a href="#top">Back to top ↑</a></footer>
+
+  <dialog id="lightbox"><button class="lightbox-close" aria-label="Schliessen">×</button><img alt="Vergrösserte Galerieansicht"></dialog>
+</body>
+</html>
